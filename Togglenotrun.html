@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+</head>
+<body>
+    <button id="btn" onclick="myfun()"><b>Signup</b></button><br>
+    <div id="abc"></div>
+    <p>Please sign in</p>
+<script>
+    function myfun(){
+        var x = "<input type='text' placeholder='user id'><br><br><input type='text' placeholder='password'><br><br>";   
+        var y = "<input type='button' value ='Login'>";
+        var z = document.getElementById("btn").innerHTML=x;
+        var a = document.getElementById("abc").innerHTML=y;
+        if (z.innerHTML == "Signup") {
+           a.innerHTML = "Login";
+        } else {
+           z.innerHTML = "Singup";
+        }
+    }
+
+</script>
+</body>
+</html>
