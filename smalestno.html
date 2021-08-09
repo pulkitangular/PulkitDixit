@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smalest number</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("enter first number"));
+        var b = parseInt(prompt("enter second number"));
+        var c = parseInt(prompt("enter third number"));
+        console.log (a+" "+b+ " "+c);
+        function check(){
+            if( a <=b && a<=c){
+                console.log (a);
+            }
+            else if (b <=a && b<=c){
+                console.log(b);
+            }
+            else {
+                console.log(c);
+            }
+        }
+    check();
+    </script>
+</body>
+</html>
