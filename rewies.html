@@ -1,0 +1,260 @@
+<html>
+<head>
+<!--     <div class="box">
+        <p>Text</p> 
+    </div>
+    <div class="box2">
+          <p>Text</p>
+    </div> -->
+</head>
+<body>
+    <script>
+        /* var PP = document.querySelectorAll("box2 P")
+console.log(PP) */
+
+//logical oprator
+    /* var i = 10;
+    var i = 5;
+    //var r = 1 && 0;
+    var r = 2 && 5 && 0 && 6;
+    console.log(r); 
+    (result 0)
+    */
+    
+    /* var i = 10;
+    var i = 5;
+    var r = 2 || 5 || 0 || 6;
+    console.log(r);
+    (result 2) */
+    
+    //ternary oprator
+    
+    /* var i = 40;
+    var j = 10;
+    var k = 60;
+    var r = i > j ? i : j;
+    document.write(r);
+    //(result 40) */
+    
+    //Increment/decrement
+    /* var i = 10;
+        i++;
+        console.log(i);
+    (result 11)
+        var i = 10;
+        i--;
+        console.log(i); 
+    (result 9)*/
+    
+    // Equality(===)
+        /* var i = "10";
+        var j = 10;
+        console.log(i==j);(result ture)
+        console.log(i===j);(result false) */
+          
+//Delete oprator
+    /* var Person ={id : '100', name : 'Amit', Gender : 'Male', Age : '29'};
+    console.log(delete Person.Age);
+    document.write(delete Person.Age); */
+        //result(ture)
+
+    // concatenation (+)
+    /* var i = "5";
+    var j = 6;
+    var k = i + j;
+    var k = parseInt (i) + j;
+    console.log(k);*/
+    //result(11) 
+    
+    /* var i = "5.7";
+    var j = 6;
+    var k = i + j;
+    var k = parseFloat (i) + j;
+    console.log(k);*/
+    //result(11.7) 
+    
+    /* var i = "5m6.78";
+    var j = 7;
+    var k = i + j;
+    var k = parseFloat (i) + j;
+    console.log(k); */
+    //result(12)
+    
+    //Hoisting variable
+    /* console.log (x)
+    document.write(x)
+    var x = 100; */
+    //result (undefine)
+    
+    //Window Prompt
+    /* function Prodction(){
+        var x = window.prompt("enter first number");
+        var y = window.prompt("enter second number");
+        var z = x*y;
+        alert("result" +z)
+    }
+    Prodction(); */
+
+</script>
+</body>
+</html>
+
+<html>
+<!-- use document.getElementById -->    
+<head>
+<!-- <input type="text" id="n1" placeholder="enter firstname">
+<input type="text" id="n2" placeholder="enter firstname"><br><br>
+<button onclick="Product()">Calculater</button>
+ -->
+ 
+</head>
+<body>
+<script>
+/* 
+function Product(){
+    var x = document.getElementById("n1").value;
+    var y = document.getElementById("n2").value;
+    var z = x*y;
+    alert("result" +z);    
+} */
+
+//while_loop
+/* var n = 50;
+var i = 1;
+    while(i<=10){
+    var t = n*i
+    document.write("<br>"+ n +"*" +i +"=" +t)
+    i++;
+    } */
+
+//(for of)_loop    
+    /* var item = ["PHP", "Java", "Angular", "Phython"];
+    for(var item of item){
+        document.write("value : "+item+" <br>")
+    } */
+
+//(for in)_loop
+    /* var person = {id: "1", Name: "Amit", Gender: "Male", Age: "28"}
+    //document.write("Name:" + person.Name,"<br>", "Age:" +person.Age,"<br>", "Gender:" +person.Gender)
+    
+    for (var p in person){
+        document.write("Prop: "+p+", value "+person[p]+" <br>")
+    } */
+    
+ // callbackfunction
+    
+    /* var item = ["PHP", "Java", "Angular", "Phython"];
+    var count = 0;
+    item.forEach(callback)
+    function callback(v, i){
+        count++;
+        document.write("value: "+v+", index: "+i+" <br>")
+    }
+    console.log(count); */    
+
+    //or
+    /* var item = [45, 4, 9, 16];
+     var count = 0;
+     item.forEach(callback)
+     function callback(v, i){
+         count++;
+    document.write("value: "+v+", index: "+i+" <br>")
+     }
+     console.log(count); */
+
+//Array
+     /* var item = [];
+     console.log(item);
+     console.log(item instanceof Array); */
+
+     /* var msg ="<h3>This is simple information</h3>";
+     var box = document.querySelector(".box");
+     document.write(box.innerHTML=msg) */
+
+//sort array (Arrange alphabetic order)
+     /* var a = ["PHP", "Java", "Angular", "ASP", "Android"];
+     a.sort()
+     console.log(a); */
+
+//map array
+    /* var x = [12, 13, 14, 15];
+    var result = x.map 
+    (function(e, i){
+    return e
+    })
+    console.log(result); */
+
+    //or 
+    /* var y = [1, 3, 5, 4, 7];
+    var result = y.map(function(e, i){
+        return e;
+    })
+    console.log(result); */
+
+//filter Array (find array)
+
+    /* var x = ["PHP", "Java", "Angular", "ASP", "Android"];
+    var result = x.filter(function(e, i){
+    return e.startsWith("A")
+    })
+    console.log(result); */
+//or
+    /* var x = ["Angular", "Android", "Jave", "JavaScript", "PHP"];
+    var result = x.filter(function(e, i){
+        return e.startsWith("J")
+    })
+    console.log(result); */
+
+// Every Array (find:-ture, false)
+
+     /* var y = [3, 5, 6, 9, 11];
+    var result = y.every(function(e, i){
+        return e > 2;
+    })
+    console.log(result); */ 
+
+//concat two arrays
+
+    /* var array1 = ["Vijendra", "Singh"];
+    var array2 = ["Singh", "Shakya"];
+
+    console.log(array1.concat(array2)); */
+ 
+ //or   
+    /* const letters = ['a', 'b', 'c'];
+    const numbers = [1, 2, 3];
+    console.log(letters.concat(numbers)) */
+
+//Find indexof()
+    /* var c = [3, 4, 5, 6, 7, 5, 6];
+    console.log(c.indexOf(6, c.indexOf(6)+1)); */
+
+
+//push method (print in last index)
+    /* var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+    animals.push('cow');
+    console.log(animals); */
+
+//unshift method (print in first index)
+    /* var x = [1, 2, 3];
+    x.unshift(4, 5)
+    console.log(x); */
+
+//slice method(delete index)
+    /* var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+    console.log(animals.slice(2)); */
+
+//pop array (remove last index)
+    /* var plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+    plants.pop();
+    console.log(plants); */
+
+//shift array (remove first index)
+    /* var plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+    plants.shift();
+    console.log(plants);  */
+
+
+</script>
+</body>
+</html>
