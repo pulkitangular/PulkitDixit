@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightsteelblue;
+}
+.container{
+    width: 94%;
+    margin: auto;
+}
+.card{
+    width: 50%;
+    background-color:blue;
+    margin: auto;
+}
+.card-header{
+    padding: 8px;
+    background-color: rgb(4, 54, 56);
+    text-align: center;
+    color: #fff;
+}
+.card-body{
+    padding: 10px 15px;
+}
+.form-group label{
+    display: block;
+    color: #fff;
+}
+
+.form-group{
+    margin-bottom: 12px;
+}
+.form-control{
+    padding: 9px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.btn{
+    padding: 12px;
+    border-style: none;
+    color: #fff;
+    background-color: rgb(3, 32, 3);
+}
+.book-content{
+    padding: 15px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table tr th, .table tr td{
+    border:1px solid black;
+    padding: 7px;
+}

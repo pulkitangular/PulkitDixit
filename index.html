@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <label>TODO BOOK</label>
+            </div>
+            <div class="card-body">
+                   <div class="form-group">
+                       <label for="">Book title</label>
+                       <input type="text" class="form-control">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="">Book price</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Book author</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-submit">Submit</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="book-content">
+            <table class="table">
+                <thead align="center">
+                    <tr>
+                        <th align="left">S. No.</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Author</th>
+                        <th>Action</th>
+                        </tr>
+                </thead>
+                <tbody align="center">
+                    <tr id="row1">
+                        <td align="left" id="sr_row1">1</td>
+                        <td id="title_row1">JavaScript</td>
+                        <td id="price_row1">2000</td>
+                        <td id="author_row1">Brendan Eich</td>
+                        <td><input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                            <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('1')"></td>
+                    </tr>
+
+                    <tr id="row2">
+                        <td align="left" id="sr_row2">2</td>
+                        <td id="title_row2">Angular</td>
+                        <td id="price_row2">3000</td>
+                        <td id="author_row2">Misko Hevery</td>
+                        <td><input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                            <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('2')"></td>
+                    </tr>
+
+                    <tr id="row3">
+                        <td align="left" id="sr_row3">3</td>
+                        <td id="title_row3">PHP</td>
+                        <td id="price_row3">3500</td>
+                        <td id="author_row3">Rasmus Lerdorf</td>
+                        <td><input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                            <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('3')"></td>
+                    </tr>
+
+                    <tr id="row4">
+                        <td align="left" id="sr_row4">4</td>
+                        <td id="title_row4">Python</td>
+                        <td id="price_row4">4000</td>
+                        <td id="author_row4">Guido van Rossum</td>
+                        <td><input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+                            <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('4')"></td>
+                    </tr>
+
+                    <tr id="row5">
+                        <td align="left" id="sr_row5">5</td>
+                        <td id="title_row5">Java</td>
+                        <td id="price_row5">5000</td>
+                        <td id="author_row5">James Gosling</td>
+                        <td><input type="button" id="edit_button5" value="Edit" class="edit" onclick="edit_row('5')">
+                            <input type="button" id="save_button5" value="Save" class="save" onclick="save_row('5')">
+                            <input type="button" value="Delete" class="delete" onclick="delete_row('5')"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+            <script src="script.js"></script>
+</body>
+</html>
