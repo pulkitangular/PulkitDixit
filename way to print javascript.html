@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>what is javascript.</h1>
+
+
+<script>
+//6 ways to print in javascript
+    var a; //declare
+     var a = "pulkit"; //intialization
+     var b = "dixit";
+    //var a = 10;
+    //document.write(a +" "+b);
+    document.writeln(a+"<br>");
+    //console.log(a);
+    //alert(a);
+    //document.getElementById("demo").innerHTML = "<h1>hello pulkit</h1>";
+    //document.getElementById("demo1").innerText = "<h1>hello pulkit</h1>";
+
+    //logic oprator
+    /* var i = 10;
+        var j =5;
+        var r = 1 && 0;
+        var r = 2 && 5 && 0 && 6;
+        console.log(r);
+        
+        var r = 3 || 5 || 0 || 6;
+        console.log(r);
+        */
+
+  //  Ternary oprator
+     /*     var i = 10;
+        var j = 50;
+        var k = 60;
+        var r = i > j ? i : j;
+        //var r = i > j && i > k ? i : j>i && j > k ? j : k> i;
+        console.log(r);
+    */
+
+    /* Increment and Decrement
+    Increment 
+     var i = 10;
+        i++;
+        console.log(i);
+    Decrement
+    var j = 20;
+    j--
+    console.log(j);
+    */
+
+    /*Eqluality
+    var i = 10;
+    var j = "10";
+    console.log(i==j);
+    console.log(i===j);
+    */
+
+//--------Delete function-----
+
+/* function Product(){
+    var x = document.getElementById("a1").value
+    var y = document.getElementById("a2").value
+    var z = x*y
+    document.getElementById("a3").value=z
+
+}
+Product(); */
+/* var Person ={id : 100, Name : "Amit", Gender : "Male",  Age : 23};
+delete Person.id;
+console.log(Person); */
+
+//------Addition with parseInt----
+
+/* var i = "5";
+var j = 6;
+var k = i + j;
+var k= parseInt(i)+j
+console.log(k) */
+
+//------Addition with parseFloat----
+
+/* var i = "7.9";
+var j = 6;
+var k = i + j;
+var k= parseFloat(i)+j
+console.log(k) */
+
+//-------------------------------------------------------------
+/* function Product(){
+    var abc = document.getElementsByName("abc");
+    abc[2].value = abc[0].value * abc[1].value
+}
+var btn = document.getElementById("btn")
+btn.addEventListener("click", Product); */
+
+/* var pp= document.querySelectorAll("box2 p")
+console.log(pp)
+ */
+
+
+//-----------------------------------------------
+
+/* <input type="text" id="a1" placeholder="enter first number">
+    <input type="text" id="a2" placeholder="enter second number"><br><br>
+    <button onclick="Product()" id="btn">Calcualator</button><br><br>
+    <input type="text" id="a3" placeholder="Result">
+
+    <div class="box">
+        <input type="text" placeholder="enter age" id="txt">
+    <br><br><button id="btn">Validate</button>
+    <div id="msg"></div>
+    </div> */
+
+/* function Validate(){
+    var age = parseInt(document.getElementById("txt").value);
+    var msg = " "
+    if(age >=18){
+        msg="You are eligiable for vote"
+    }
+    else{
+        msg="you are not eligiable for vote"
+    }
+    document.getElementById("msg").innerHTML=msg
+}
+document.getElementById("btn").addEventListener("click", Validate); */
+
+
+/*------String convert to array(split)------
+    var str=new String("India's capital is delhi")
+    str=str.split("")
+    console.log(str[19]) */
+
+/* ------String convert to array(split) and change the word------
+        var str=new String("India's capital is delhi")
+        str=str.split("")
+        str.splice(16,2,..."are".split(""))
+        console.log(str.join("")) */ 
+
+
+/*----Use substr and find out index---- 
+    var str=new String("India's capital is delhi")
+    var str2=str.substr(str.indexOf("c"),7)
+    console.log(str2);  */
+
+/* -----Use substring and use indexOf find index------
+    var str=new String("India's capital is delhi")
+    var str2=str.substring(str.indexOf("c"),str.indexOf("c")+7)
+    console.log(str2);  */
+
+/*---------Use toUpperCase()------
+    var str=new String("India's capital is delhi") 
+    console.log(str.toUpperCase())  */
+
+/*---------Use startsWith and endsWith---------
+    var url ="https://www.google.com"
+    if(url.startsWith("https://" || url.startsWith("http://")) && url.endsWith(".com")){
+    console.log("valid url")
+    }
+    else{
+    console.log("invalid url")
+    } */
+
+/*-------------Use Includes-------------
+    var rr = str.charCodeAt(0)
+    var t = rr;
+    while(rr<t+5){
+    console.log(String.fromCharCode(rr))
+    rr++
+    }
+    console.log(str.includes("delhi")) */
+
+/*---------Use Match---------------------
+    var str=new String("India's capital is delhi")
+    console.log(str.match("capital")) */
+    
+</script>
+    </body>
+</html>
+
